@@ -7,6 +7,79 @@
   <title>Document</title>
 </head>
 <body>
-  
+  <header>
+    <img src="scr/images/logo.png" alt="leaf logo">
+    <nav>
+      <ul>
+        <li><a href="index.html" target="_self">Home</a>
+        </li>           
+        <li><a href="menu.html" target="_blank">Menu</a>
+        </li>           
+        <li><a href="events.html" target="_blank">Events</a>
+        </li>           
+        <li><a href="about_us.html" target="_blank">About 
+          us</a>
+        </li>           
+        <li><a href="blog.html" target="_blank">Blog</a>
+        </li>           
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="principles">
+    <img src="scr/images/delicious.jpg" alt="delicious bowl of vegetables">
+    <h3>Delicious</h3>
+    <img src="scr/images/ethical.jpg" alt="free pigs eating">
+    <h3>Ethical</h3>
+    <img src="scr/images/healthy.jpg" alt="vegetables arranged in a heart shape">
+    <h3>Healthy</h3>
+
+    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, vel!</h1>
+    </section>
+    <section class="reviews">
+
+    </section>
+
+    <section class="location">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.899403121731!2d-76.53697018925499!3d3.374760196585745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a171d0c4cbb7%3A0x87dfc5d3c72b3ec4!2sUniversidad%20Del%20Valle%2C%20Comuna%2017%2C%20Cali%2C%20Valle%20del%20Cauca!5e0!3m2!1ses!2sco!4v1738527337240!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="reservations">
+      <form action="/submit" method="post">
+        <label for="name">Full name</label>
+        <input type="text" name="name" id="name">
+
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email">
+
+        <label for="guests">How many guests?</label>
+        <input type="number" name="guests" id="guests">
+
+        <label for="dateTime">Date and time of reservation</label>
+        <input type="datetime-local" name="dateTime" id="dateTime">
+
+        <label for="message">Anything else you want to tell us?</label>
+        <textarea name="message" id="message"></textarea>
+
+        <input type="submit" value="Make reservation!">
+      </form>
+    </section>
+
+  </main>
+  <footer>
+    <section class="schedule">
+      <ul>
+        <li>Friday: 5-10pm</li>
+        <li>Saturday: 4-10pm</li>
+        <li>Sunday: 4-9pm</li>
+      </ul>
+    </section>
+    <section class="address">
+      2004 Pennsylvania Avenue New Brunswick NJ 08901
+    </section>
+    <section class="social">
+    </section>
+    <div class="attriution">Developed by Angela Cordero</div>
+  </footer>
 </body>
 </html>
