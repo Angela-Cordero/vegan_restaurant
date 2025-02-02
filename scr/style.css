@@ -9,10 +9,7 @@
   padding: 0;
 }
 
-.container{
-  background-color:rgb(158, 233, 233);
-  max-width: 1440px;
-}
+.container
 
 /*heading*/
 .headingContainer{
@@ -73,6 +70,20 @@ h1{
   padding: 40px;
   font-size: 40px;
   color: #281a09;
+}
+
+/*reviews*/
+.reviews{
+  display: flex;
+  margin: 30px;
+}
+
+#review1, #review2, #review3, #review4{
+  margin: 20px;
+  background-color: #281a09;
+  border-radius: 30px;
+  padding: 30px;
+  color: #ded4bc;
 }
 
 
