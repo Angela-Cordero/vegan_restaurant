@@ -4,7 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="scr/style.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Londrina+Sketch&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Young+Serif&display=swap" rel="stylesheet">
+
+  <title>Vegan Restaurant</title>
 </head>
 <body>
   <div class="container">
@@ -70,52 +75,65 @@
 
       <div class="locationReservation">
         <section class="location">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.899403121731!2d-76.53697018925499!3d3.374760196585745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a171d0c4cbb7%3A0x87dfc5d3c72b3ec4!2sUniversidad%20Del%20Valle%2C%20Comuna%2017%2C%20Cali%2C%20Valle%20del%20Cauca!5e0!3m2!1ses!2sco!4v1738527337240!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <p>How to get to our restaurant?</p>
+          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.899403121731!2d-76.53697018925499!3d3.374760196585745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a171d0c4cbb7%3A0x87dfc5d3c72b3ec4!2sUniversidad%20Del%20Valle%2C%20Comuna%2017%2C%20Cali%2C%20Valle%20del%20Cauca!5e0!3m2!1ses!2sco!4v1738527337240!5m2!1ses!2sco" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
 
-        <section class="reservations">
-          <form action="/submit" method="post">
-            <label for="name">Full name</label>
-            <input type="text" name="name" id="name">
+        <section class="reservationForm">
+          <div class="reservation">
+            <form action="/submit" method="post">
+              <label for="name">Full name</label>
+              <input type="text" name="name" id="name">
+              <br>
 
-            <label for="email">Email</label>
-            <input type="text" name="email" id="email">
+              <label for="email">Email</label>
+              <input type="text" name="email" id="email">
+              <br>
 
-            <label for="guests">How many guests?</label>
-            <input type="number" name="guests" id="guests">
+              <label for="guests">How many guests?</label>
+              <input type="number" name="guests" id="guests">
+              <br>
 
-            <label for="dateTime">Date and time of reservation</label>
-            <input type="datetime-local" name="dateTime" id="dateTime">
+              <label for="dateTime">Date and time of reservation</label>
+              <input type="datetime-local" name="dateTime" id="dateTime">
+              <br>
+              
+              <label for="message">Anything else you want to tell us?</label>
+              <textarea name="message" id="message"></textarea>
+              <br>
 
-            <label for="message">Anything else you want to tell us?</label>
-            <textarea name="message" id="message"></textarea>
-
-            <input type="submit" value="Make reservation!">
-          </form>
+              <input type="submit" value="Make reservation!" id="submitButton">
+            </form>
+          </div>
         </section>
       </div>
     </main>
 
     <footer>
-      <section class="schedule">
-        <ul>
-          <li>Friday: 5-10pm</li>
-          <li>Saturday: 4-10pm</li>
-          <li>Sunday: 4-9pm</li>
-        </ul>
-      </section>
-      <section class="address">
-        2004 Pennsylvania Avenue New Brunswick NJ 08901
-      </section>
-      <section class="social">
-        <a href="https://www.instagram.com/" target="_blank">
-          <i class="fa-brands fa-instagram" id="instagram"></i>
-        </a>
-        <a href="https://www.whatsapp.com/">
-          <i class="fa-brands fa-whatsapp" id="whatsapp"></i>
-        </a>
-      </section>
-      <div class="attriution">Developed by Angela Cordero</div>
+      <div class="footerContainer">
+        <section class="schedule">
+          <ul>
+            <li>Friday: 5-10pm</li>
+            <li>Saturday: 4-10pm</li>
+            <li>Sunday: 4-9pm</li>
+          </ul>
+        </section>
+        <section class="address">
+          2004 Pennsylvania Avenue New Brunswick NJ 08901
+        </section>
+        <section class="social">
+          <a href="https://www.instagram.com/" target="_blank">
+            <i class="fa-brands fa-instagram" id="instagram"></i>
+          </a>
+          <a href="https://www.whatsapp.com/">
+            <i class="fa-brands fa-whatsapp" id="whatsapp"></i>
+          </a>
+        </section>
+      </div>
+      <div class="attribution">
+        <p>Developed with ♥️ by <a href="https://github.com/Angela-Cordero" target="_blank">Angela Cordero</a>
+        </p>
+      </div>
     </footer>
   </div>
 </body>

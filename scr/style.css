@@ -20,14 +20,15 @@
 #logo{
   width: 200px;
   height: auto;
+  padding:30px;
 }
 
 .navBar ul{
   list-style-type: none;
   display: flex;
   justify-content: flex-end;
-  margin-left: 520px;
-  margin-top: -110px;
+  margin-left: 450px;
+  margin-top: -150px;
 }
 
 .navBar li{
@@ -41,6 +42,7 @@
   background-color:#ded4bc;
   padding: 15px;
   border-radius: 15px;
+  font-family: "Playwrite GB S", serif
 }
 
 /*principles*/
@@ -62,6 +64,7 @@ h3{
   text-align: center;
   margin: 20px;
   font-size: 30px;
+  font-family:"Red Hat Text", serif;
 }
 
 h1{
@@ -70,12 +73,18 @@ h1{
   padding: 40px;
   font-size: 40px;
   color: #281a09;
+  font-family: "Playwrite GB S", serif
 }
 
 /*reviews*/
 .reviews{
   display: flex;
   margin: 30px;
+}
+
+.reviews h4, p{
+  font-family:"Red Hat Text", serif;
+  margin-bottom: 10px;
 }
 
 #review1, #review2, #review3, #review4{
@@ -86,4 +95,79 @@ h1{
   color: #ded4bc;
 }
 
+/*location and reservation section*/
+.locationReservation{
+  display: flex;
+  margin: 50px;
+}
 
+/*location*/
+.location p{
+  color: #281a09;
+  font-size: 30px;
+  margin-left: 80px;
+  margin-bottom: 30px;
+}
+
+.map{
+  width: 500px;
+  height: 400px;
+  border-radius: 20px;
+  border: 10px solid #A0C307;
+}
+
+/*reservation*/
+.reservation{
+  margin-left: 180px;
+  margin-top: 100px;
+}
+
+.reservation input, textarea{
+  margin: 20px;
+  border-radius: 10px;
+  border: 3px solid #281a09;
+  
+}
+
+#submitButton{
+  padding: 15px;
+}
+
+
+/*footer*/
+footer{
+  background-color: #281a09;
+  color: #ded4bc;
+}
+.footerContainer{
+  display: flex;
+  padding: 50px;
+  height: 150px;
+  justify-content: space-around;
+}
+
+.schedule, .address, .social{
+  margin: 70px;
+}
+
+.schedule ul{
+  list-style-type: none;
+}
+
+#instagram, #whatsapp{
+  color: #ded4bc;
+  font-size: 40px;
+  margin: 20px;
+}
+
+.attribution p{
+  color: hwb(71 3% 24% / 0.753);
+  text-align: center;
+  padding: 20px;
+}
+
+.attribution a{
+  color: hwb(71 3% 24% / 0.753);
+  text-align: center;
+  text-decoration: none;
+}
