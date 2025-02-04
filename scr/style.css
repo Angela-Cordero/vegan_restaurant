@@ -18,44 +18,50 @@
 .headingContainer{
   display: flex;
   flex-wrap: wrap;
-  justify-content:space-between;
   align-items: center;
+  justify-content:flex-end;
+  padding-right: 20px;
+  padding: 20px;
 }
 
 #logo{
   width: 200px;
   height: auto;
   padding:30px;
+  margin-right: auto;
 }
 
 .navBar ul{
   list-style-type: none;
   display: flex;
-  flex-wrap: wrap;
-  right: 0px;
+  gap: 20px;
 }
 
 .navBar li{
-  margin-right: 20px;
-  margin-top: 50px;
+  background-color:#ded4bc;
+  border-radius: 15px;
+  font-family: "Playwrite GB S", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navBar li a{
   text-decoration: none;
-  color: #281a09;
   font-size: 20px;
-  background-color:#ded4bc;
   padding: 15px;
-  border-radius: 15px;
-  font-family: "Playwrite GB S", serif
+  color: #281a09;
 }
 
 /*principles*/
 .principles{
   background-color: #A0C307;
-  display: flex;
   justify-content: space-around;
+  display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  padding-right: 20px;
+  padding: 20px;
 }
 
 #principle1,#principle2,#principle3{
