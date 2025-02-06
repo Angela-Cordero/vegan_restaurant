@@ -11,7 +11,9 @@
 
 .container{
   background-color: #dfdbd232;
-  width: 100vw;
+  max-width: 100vw;
+  margin: 0 auto;
+  
 }
 
 /*heading*/
@@ -19,22 +21,21 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content:flex-end;
-  padding-right: 20px;
-  padding: 20px;
 }
 
 #logo{
   width: 200px;
   height: auto;
-  padding:30px;
   margin-right: auto;
+  padding: 1rem;
 }
 
 .navBar ul{
   list-style-type: none;
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 3rem;
 }
 
 .navBar li{
@@ -49,40 +50,42 @@
 
 .navBar li a{
   text-decoration: none;
-  font-size: 20px;
-  padding: 15px;
+  font-size: 1.3rem;
+  padding: 1rem;
   color: #281a09;
 }
 
 /*principles*/
 .principles{
   background-color: #96b703db;
+  min-height: 400px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
 }
 
-#principle1,#principle2,#principle3{
+.principle1,.principle2,.principle3{
   background-color:  #E3D9C2;
   border-radius: 40px;
-  margin-top: 80px;
-  justify-self: center;
+  min-width: 13rem;
+  padding: 2rem;
 }
 
-
 #bowl, #pigs, #heart{
-  width: auto;
-  height: 200px;
+  width: 100%;
+  max-width: 17rem;
+  height: auto;
   border-radius: 30px;
-  margin-top: 10px;
-  margin: 20px;
   box-shadow: 0 0 3px #281a09;
 }
 
 h3{
   text-align: center;
-  margin-bottom: 20px;
-  font-size: 20px;
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
   color: #263802;
   font-family: "Playwrite GB S", serif;
   text-shadow: 1px 1px 2px #96b70364 ;
@@ -91,23 +94,21 @@ h3{
 h1{
   background-color: #96b703db;
   text-align: center;
-  padding: 40px;
-  font-size: 40px;
+  padding: 2rem;
+  font-size: 2.5rem;
   color: #281a09;
   font-family:"Red Hat Text", serif;
   text-shadow: 3px 2px 3px #ded4bc;
-  margin-bottom: 30px;
 }
 
 /*reviews*/
+
 .reviewSection {
-  margin: 20px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-row: auto;
-  justify-items: center;
-  align-items: center;
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
 }
 
 .reviewSection h4, p {
@@ -115,34 +116,33 @@ h1{
 }
 
 #review1, #review2, #review3, #review4 {
+  max-width: 250px;
   background-color: #281a09;
   border-radius: 30px;
-  padding: 30px;
+  padding: 1.5rem;
   color: #ded4bc;
-
 }
 
 /*location and reservation section*/
 .locationReservation{
-  margin-top: 20px;
-  margin-bottom: 20px;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-row: auto;
-  justify-items: center;
-  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 2rem;
+  gap: 3rem;
 }
 
 /*location*/
+.location{
+  text-align: center;
+}
 .location p{
   color: #281a09;
-  font-size: 30px;
-  text-align: center;
+  font-size: 2rem;
+  padding: 2rem;
 }
 
 .map{
-  width: 80%;
-  height: 30vw;
   border-radius: 60px;
   border: 10px solid #A0C307;
   box-shadow: 0 1px 5px #281a09;
@@ -150,32 +150,35 @@ h1{
 
 /*reservation*/
 .reservation{
-  
+  padding: 1rem;
+  text-align: center;
 }
 
 .reservation input, textarea{
   width: 100%;
+  height: 3rem;
+  font-size: 1.5rem;
   border-radius: 10px;
   border: 3px solid #281a09;
   font-family:"Red Hat Text";
-  height: 40px;
-  margin: 10px;
-  font-size: 20px;
-  text-align: center;
   box-shadow: 0 1px 2px #281a09;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .reservation label{
   font-family: "Playwrite GB S";
+  font-size: 1.3rem;
 }
 
 #submitButton{
-  padding: 15px;
+  width: fit-content;
+  height: 5rem;
+  padding: 1rem;
+  font-size: 1.5rem;
   font-family: "Playwrite GB S";
   font-weight: bold;
-  font-size: 20px;
   background-color: #A0C307;
-  height: 80px;
   box-shadow: 0 1px 3px #281a09;
 }
 
@@ -184,17 +187,16 @@ footer{
   background-color: #281a09;
   color: #ded4bc;
   font-family:"Red Hat Text", serif;
-  font-size: 16px
-}
-.footerContainer{
-  padding: 50px;
-  height: 150px;
-  display: flex;
-  align-content:space-evenly;
+  font-size: 1rem;
 }
 
-.schedule, .address, .social{
-  margin-top: 40px;
+.footerContainer{
+  padding: 2.1rem;
+  max-height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
 }
 
 .schedule ul{
@@ -204,13 +206,13 @@ footer{
 #instagram, #whatsapp{
   color: #ded4bc;
   font-size: 40px;
-  margin: 20px;
+  margin: 1.2rem;
 }
 
 .attribution p{
   color: hwb(71 3% 24% / 0.753);
   text-align: center;
-  padding: 20px;
+  padding: 1.2rem;
 }
 
 .attribution a{
@@ -219,28 +221,8 @@ footer{
   text-decoration: none;
 }
 
-@media screen and (max-width:768px){
-  #bowl, #pigs, #heart{
-  width: auto;
-  height: 150px;
-  }
-
-
-.locationReservation{
-  display: flex;
-  flex-wrap: wrap;
-  padding:20px;
+@media screen and (max-width:400px){
+.reservation{
+  width: 13rem;
 }
-
-.map{
-  margin-left: 20px;
-  height: 50vw;
-  margin-bottom: 20px;
-}
-
-.reviewSection{
-  display: flex;
-  flex-wrap: wrap;
-}
-
 }
