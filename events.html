@@ -33,36 +33,52 @@
       </div>
     </header>
     <main>
-      <div class="eventsForm">
-            <form action="/submit" method="post">
-              <label for="name">Full name</label><br>
-              <input type="text" name="name" id="name">
-              <br>
+      <h1>Events</h1>
 
-              <label for="email">Email</label><br>
-              <input type="text" name="email" id="email">
-              <br>
-
-              <label for="guests">How many guests?</label><br>
-              <input type="number" name="guests" id="guests">
-              <br>
-
-              <label for="dateTime">Date and time of reservation</label><br>
-              <input type="datetime-local" name="dateTime" id="dateTime">
-              <br>
-              
-              <label for="message">Anything else you want to tell us?</label><br>
-              <textarea name="message" id="message"></textarea>
-              <br>
-
-              <input type="submit" value="Send!" id="submitButton">
-            </form>
-          </div>
-
-
-
-
+      <div class="eventTypes">
+        <div class="eventType" class="weddings">
+          <img src="" alt="image">
+          <h4>Weddings</h4>
+        </div>
+        <div class="eventType" class="birthdays">
+          <img src="" alt="image">
+          <h4>Birthdays</h4>
+        </div>
+        <div class="eventType" class="corporative">
+          <img src="" alt="image">
+          <h4>Corporative</h4>
       </div>
+      
+      <div class="eventsInfo">
+        <h3>Any questions? <br>
+          Complete the form and we will contact you with more details.
+        </h3>
+        <div class="eventsForm">
+          <form action="/submit" method="post">
+            <label for="name">Full name</label><br>
+            <input type="text" name="name" id="name">
+            <br>
+            <label for="email">Email</label><br>
+            <input type="text" name="email" id="email">
+            <br>
+            <label for="email">Phone number</label><br>
+            <input type="text" name="phone" id="phone">
+            <br>
+            <label for="guests">How many guests?</label><br>
+            <input type="number" name="guests" id="guests">
+            <br>
+            <label for="type">Type of event</label><br>
+            <input type="type" name="type" id="type">
+            <br>
+            <label for="message">Anything else you want to tell us?</label>
+            <br>
+            <textarea name="message" id="message"></textarea>
+            <br>
+            <input type="submit" value="Send!" id="submitButton">
+          </form>  
+        </div>  
+      </div>  
+
     </main>
         <footer>
       <div class="footerContainer">
