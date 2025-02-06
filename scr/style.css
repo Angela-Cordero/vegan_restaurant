@@ -311,7 +311,25 @@ footer{
 
 /*Events*/
 
+.eventTypeSection{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 
+.eventType img{
+  width: 200px;
+  height: auto;
+}
+
+.eventType{
+  background-color: #281a09;
+  color: #ded4bc;
+  font-family:"Red Hat Text";
+  padding: 1rem;
+}
+
+/*form section*/
 .eventsInfo{
   padding: 1rem;
   display: flex;
