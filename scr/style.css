@@ -1,8 +1,18 @@
 /*palette
-  dark green #dfdbd232;
-  bone #ded4bc;
-  light green #96b703db;
-  brown #281a09;*/
+  green #85A302;
+  bone #D6C7A7;
+  beige: #CDC7B9; ligher beige #d6c7a756
+  brown #261808;
+
+light green #96b703db;*/
+
+:root{
+  --green: #85A302;
+  --beige: #d6c7a7;
+  --brown: #261808;
+
+}
+
 
 
 *{margin: 0;
@@ -10,7 +20,7 @@
 }
 
 .container{
-  background-color: #dfdbd232;
+  background-color: #d6c7a767;
   max-width: 100vw;
   margin: 0 auto;
   
@@ -39,25 +49,25 @@
 }
 
 .navBar li{
-  background-color:#ded4bc;
+  background-color:var(--beige);
   border-radius: 15px;
   font-family: "Playwrite GB S", serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 1px 1px 2px #281a09;
+  box-shadow: 0 1px 2px var(--brown);
 }
 
 .navBar li a{
   text-decoration: none;
   font-size: 1.3rem;
   padding: 1rem;
-  color: #281a09;
+  color: var(--brown);
 }
 
 /*principles*/
 .principles{
-  background-color: #96b703db;
+  background-color: var(--green);
   min-height: 400px;
   display: flex;
   flex-wrap: wrap;
@@ -68,10 +78,11 @@
 }
 
 .principle1,.principle2,.principle3{
-  background-color:  #E3D9C2;
+  background-color:  #d6c7a7d9;
   border-radius: 40px;
   min-width: 13rem;
   padding: 2rem;
+  box-shadow: 0 0 3px #d6c7a7;
 }
 
 #bowl, #pigs, #heart{
@@ -81,26 +92,26 @@
   max-width: 17rem;
   height: auto;
   border-radius: 30px;
-  box-shadow: 0 0 3px #281a09;
+  box-shadow: 0 1px 5px #261808bc;
 }
 
 h3{
   text-align: center;
   margin-bottom: 2rem;
   font-size: 1.3rem;
-  color: #263802;
+  color: var(--brown);
   font-family: "Playwrite GB S", serif;
-  text-shadow: 1px 1px 2px #96b70364 ;
+  text-shadow: 1px 1px 2px var(--green) ;
 }
 
 h1{
-  background-color: #96b703db;
+  background-color: var(--green);
   text-align: center;
   padding: 2rem;
   font-size: 2.5rem;
-  color: #281a09;
+  color: var(--brown);
   font-family:"Red Hat Text", serif;
-  text-shadow: 3px 2px 3px #ded4bc;
+  text-shadow: 3px 2px 3px var(--beige);
 }
 
 /*reviews*/
@@ -119,10 +130,10 @@ h1{
 
 #review1, #review2, #review3, #review4 {
   max-width: 250px;
-  background-color: #281a09;
+  background-color: var(--brown);
   border-radius: 30px;
   padding: 1.5rem;
-  color: #ded4bc;
+  color: var(--beige);
 }
 
 /*location and reservation section*/
@@ -139,14 +150,14 @@ h1{
   text-align: center;
 }
 .location p{
-  color: #281a09;
+  color: var(--brown);
   font-size: 2rem;
   padding: 2rem;
 }
 
 .map{
   border-radius: 60px;
-  border: 10px solid #A0C307;
+  border: 10px solid var(--green);
   box-shadow: 0 1px 5px #281a09;
 }
 
@@ -157,13 +168,14 @@ h1{
 }
 
 .reservation input, textarea{
+  background-color: #EEE8DB;
   width: 100%;
   height: 3rem;
   font-size: 1.5rem;
   border-radius: 10px;
-  border: 3px solid #281a09;
+  border: 3px solid var(--brown);
   font-family:"Red Hat Text";
-  box-shadow: 0 1px 2px #281a09;
+  box-shadow: 0 1px 2px var(--brown);
   margin-bottom: 1rem;
   text-align: center;
 }
@@ -179,14 +191,14 @@ h1{
   font-size: 1.5rem;
   font-family: "Playwrite GB S";
   font-weight: bold;
-  background-color: #A0C307;
+  background-color: var(--green);
   box-shadow: 0 1px 3px #281a09;
 }
 
 /*footer*/
 footer{
-  background-color: #281a09;
-  color: #ded4bc;
+  background-color: var(--brown);
+  color: var(--beige);
   font-family:"Red Hat Text", serif;
   font-size: 1rem;
 }
@@ -205,19 +217,19 @@ footer{
 }
 
 #instagram, #whatsapp{
-  color: #ded4bc;
+  color: var(--beige);
   font-size: 40px;
   margin: 1.2rem;
 }
 
 .attribution p{
-  color: hwb(71 3% 24% / 0.753);
+  color: #85a302a8;
   text-align: center;
   padding: 1.2rem;
 }
 
 .attribution a{
-  color: hwb(71 3% 24% / 0.753);
+  color: #85a302a8;
   text-align: center;
   text-decoration: none;
 }
@@ -237,8 +249,8 @@ footer{
   gap: 2rem;
   padding: 0.6rem;
   font-family: "Playwrite GB S";
-  background-color: #263802d4;
-  color: #ded4bc;
+  background-color: var(--brown);
+  color: var(--beige);
   font-size: 1.2rem;
 }
 
@@ -254,13 +266,12 @@ footer{
 }
 
 .foodItems{
-  background-color: #ded4bc54;
+  background-color: #d6c7a756;
   display: grid;
   position: relative;
   padding-bottom: 1rem;
   border-radius: 18px;
-  border: 1px solid #281a095c;
-  box-shadow: 0 1px 5px #281a09;
+  box-shadow: 1px 1px 3px var(--beige);
 }
 
 .foodItems img{
@@ -294,21 +305,21 @@ footer{
 }
 
 .details p{
-  color: #281a09;
+  color: var(--brown);
   font-size: 1rem;
   align-self: stretch;
 }
 
 .details button{
-  background-color: #A0C307;
-  color: #281a09;
+  background-color: var(--green);
+  color: var(--brown);
   border: none;
   border-radius: 5px;
   font-size: 1rem;
   height: fit-content;
   width: fit-content;
   padding: 0.5rem 1rem;
-  box-shadow: 0 2px 5px #263802;
+  box-shadow: 0 1px 3px var(--brown);
 }
 
 /*Events*/
@@ -328,8 +339,8 @@ footer{
 }
 
 .eventType{
-  background-color: #281a09;
-  color: #ded4bc;
+  background-color: var(--brown);
+  color: var(--beige);
   font-family:"Red Hat Text";
   padding: 1rem;
   width: 300px;
@@ -359,9 +370,9 @@ footer{
   height: 2rem;
   font-size: 1.1rem;
   border-radius: 10px;
-  border: 3px solid #281a09;
+  border: 3px solid var(--brown);
   font-family:"Red Hat Text";
-  box-shadow: 0 1px 2px #281a09;
+  box-shadow: 0 1px 2px var(--brown);
   margin-bottom: 1rem;
   margin-top: 0.5rem;
   text-align: center;
