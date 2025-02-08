@@ -392,3 +392,37 @@ footer{
   height: fit-content;
   font-size: 2rem;
 }
+
+/*about us grid*/
+.blogContainer{
+  border: 2px solid red;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 0.5fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "aside1 text1 img1"
+  "aside1 text2 img2";
+}
+
+.blogAside{
+  grid-area: aside1;
+  border: 2px solid blue;
+}
+
+#blog1{
+  grid-area: text1;
+  border: 2px solid rgb(0, 255, 98);
+}
+
+#blog2{
+  grid-area: text2;
+}
+
+.blogImage1{
+  grid-area: img1;
+}
+
+.blogImage2{
+  grid-area: img2;
+}
