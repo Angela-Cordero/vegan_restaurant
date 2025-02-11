@@ -398,31 +398,47 @@ footer{
   border: 2px solid red;
   display: grid;
   height: 100vh;
-  grid-template-columns: 0.5fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  grid-template-columns: 0.5fr 1.5fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: 
-  "aside1 text1 img1"
-  "aside1 text2 img2";
+  "aside1 art1"
+  "aside1 art2"
+  "aside1 art3";
 }
 
 .blogAside{
   grid-area: aside1;
+  font-family:"Red Hat Text";
   border: 2px solid blue;
+  
 }
 
-#blog1{
-  grid-area: text1;
-  border: 2px solid rgb(0, 255, 98);
+.blogAside ul{
+  list-style: "🌿"; 
+  font-style: italic;
+  font-family: "Playwrite GB S";
 }
 
-#blog2{
-  grid-area: text2;
+.article1{
+  grid-area: art1;
+  border: 2px solid rgb(0, 255, 42);
 }
 
-.blogImage1{
-  grid-area: img1;
+.article2{
+  grid-area: art2;
+  border: 2px solid rgb(0, 255, 42);
 }
 
-.blogImage2{
-  grid-area: img2;
+.article3{
+  grid-area: art3;
+  border: 2px solid rgb(0, 255, 42);
 }
+
+.blogImg{
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 0.2rem;
+}
+
