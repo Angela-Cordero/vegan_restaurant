@@ -204,9 +204,10 @@ footer{
 }
 
 .footerContainer{
-  padding: 2rem 4rem;
-  max-height: 150px;
+  padding: 2rem 5rem;
+  max-height: 400px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
@@ -214,13 +215,16 @@ footer{
 
 .schedule ul{
   list-style-type: none;
-  margin-top: -10px;
 }
 
 .schedule ul p{
   margin: 0;
   padding: 0;
-  margin-bottom: -20px;
+  margin-bottom: -5px;
+}
+
+.address p{
+  padding: 0;
 }
 
 .social a{
@@ -258,8 +262,16 @@ footer{
   padding: 0.6rem;
   font-family: "Playwrite GB S";
   background-color: var(--brown);
-  color: var(--beige);
   font-size: 1.2rem;
+}
+
+.menuHeading ul a{
+  text-decoration: none;
+  color: var(--beige);
+}
+
+.menuHeading ul li::marker{
+  color: var(--beige);
 }
 
 .menuHeading ul :first-child{
@@ -267,10 +279,29 @@ footer{
 }
 
 .menu{
-  padding: 1rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
-  gap: 4rem 2rem;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mainCourses, .drinks, .desserts{
+  display: grid;
+  grid-template-columns: 
+  repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.2rem;
+  padding: 1rem 2rem;
+  justify-items: center;
+}
+
+.menuSection h3{
+  font-size: 1.2rem;
+  margin-top: 1.3rem;
+}
+
+.drinks{
+  grid-template-columns: 
+  repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .foodItems{
@@ -285,7 +316,7 @@ footer{
 .foodItems img{
   position: relative;
   width: 100%;
-  height: auto;
+  max-height: 250px;
   border-radius: 15px 15px 0 0;
 }
 
@@ -300,22 +331,18 @@ footer{
 .detailsSub{
   display: grid;
   grid-template-columns: auto auto;
+  justify-content: space-around;
 }
 
 .detailsSub h5{
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-family: "Playwrite GB S";
-}
-
-.price{
-  text-align: right;
 }
 
 .details p{
   color: var(--brown);
   font-size: 1rem;
-  align-self: stretch;
 }
 
 .details button{
@@ -328,6 +355,13 @@ footer{
   width: fit-content;
   padding: 0.5rem 1rem;
   box-shadow: 0 1px 3px var(--brown);
+  margin: auto;
+}
+
+:hover.details button{
+  background-color: var(--brown);
+  color: var(--beige);
+  transition: all 300ms ease-out;
 }
 
 /*Events*/
