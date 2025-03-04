@@ -122,6 +122,7 @@ h1{
   color: var(--brown);
   font-family:"Red Hat Text", serif;
   text-shadow: 3px 2px 3px var(--beige);
+  margin: auto;
 }
 
 /*reviews*/
@@ -264,6 +265,12 @@ footer{
 
 /*menu*/
 
+.menuHeading{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
 .menuHeading ul{
   list-style: disc;
   display: flex;
@@ -288,9 +295,6 @@ footer{
   list-style: none;
 }
 
-.main{
-  background-color: #d6c7a767;
-}
 .menu{
   display: grid;
   grid-template-columns: 1fr;
