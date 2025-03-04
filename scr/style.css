@@ -19,35 +19,30 @@ light green #96b703db;*/
 .container{
   background-color: #d6c7a767;
   max-width: 100vw;
-  margin: 0 auto;
-  
-}
-
-/*heading*/
-.headingContainer{
-  display: flex;
-  flex-wrap: wrap;
-  align-items:center;
-  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 #logo{
-  width: 170px;
-  height: auto;
-  margin-right: auto;
-  padding: 1rem;
   filter: grayscale(20%);
 }
 
-.navBar ul{
-  list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  margin: 3rem;
+#navbarSupportedContent{
+  margin-bottom: auto;
 }
 
-.navBar li{
+.navbar-nav{
+  gap: 2rem;
+  margin: 3rem;
+  justify-content: space-between;
+}
+
+.navbar-toggler{
+  background-color:var(--beige);
+  border: none;
+}
+
+.nav-item{
   background-color:var(--beige);
   border-radius: 15px;
   font-family: "Playwrite GB S", serif;
@@ -57,11 +52,27 @@ light green #96b703db;*/
   box-shadow: 0 1px 2px var(--brown);
 }
 
-.navBar li a{
+.nav-link{
   text-decoration: none;
   font-size: 1rem;
   padding: 1rem;
   color: var(--brown);
+}
+
+.navbar-collapse{
+  flex-grow: 0;
+}
+
+.active{
+  background-color:#85A302;
+  border-radius: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color:#85A302;
+  border-radius: 15px;
 }
 
 /*principles*/
@@ -277,6 +288,9 @@ footer{
   list-style: none;
 }
 
+.main{
+  background-color: #d6c7a767;
+}
 .menu{
   display: grid;
   grid-template-columns: 1fr;
@@ -564,6 +578,3 @@ footer{
   margin: 1rem;
 }
 
-.active{
-  background-color:#85A302;
-}
