@@ -1,0 +1,55 @@
+/*footer*/
+footer{
+  background-color: $color3;
+  color: $color2;
+  font-family:"Red Hat Text", serif;
+  font-size: 1rem;
+}
+
+.footerContainer{
+  padding: 2rem 5rem;
+  max-height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.schedule ul{
+  list-style-type: none;
+}
+
+.schedule ul p{
+  margin: 0;
+  padding: 0;
+  margin-bottom: -5px;
+}
+
+.address p{
+  padding: 0;
+}
+
+.social a{
+  font-size: 40px;
+  text-decoration: none;
+  color: $color2;
+}
+
+.attribution p{
+  color: $color1a;
+  text-align:center;
+  padding: 1.2rem;
+  margin: auto;
+}
+
+.attribution a{
+  color: $color1a;
+  text-decoration: none;
+}
+
+@media screen and (max-width:400px){
+.reservation{
+  width: 13rem;
+}
+}
