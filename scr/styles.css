@@ -306,7 +306,7 @@ footer {
 }
 
 .foodItems {
-  background-color: rgba(214, 199, 167, 0.4039215686);
+  background-color: #d6c7a7;
   display: grid;
   position: relative;
   padding-bottom: 1rem;
