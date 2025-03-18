@@ -1,83 +1,71 @@
-/*palette
-  green #85A302;
-  bone #D6C7A7;
-  beige: #CDC7B9; ligher beige #d6c7a756
-  brown #261808;
-
-light green #96b703db;*/
-
-:root{
-  --green: #85A302;
-  --beige: #d6c7a7;
-  --brown: #261808;
-}
-
-*{margin: 0;
+@charset "UTF-8";
+* {
+  margin: 0;
   padding: 0;
 }
 
-.container{
-  background-color: #d6c7a767;
+.container {
+  background-color: rgba(214, 199, 167, 0.4039215686);
   max-width: 100vw;
   margin: 0;
   padding: 0;
 }
 
-#logo{
+#logo {
   filter: grayscale(20%);
 }
 
-#navbarSupportedContent{
+#navbarSupportedContent {
   margin-bottom: auto;
 }
 
-.navbar-nav{
+.navbar-nav {
   gap: 2rem;
   margin: 3rem;
   justify-content: space-between;
 }
 
-.navbar-toggler{
-  background-color:var(--beige);
+.navbar-toggler {
+  background-color: #d6c7a7;
   border: none;
 }
 
-.nav-item{
-  background-color:var(--beige);
+.nav-item {
+  background-color: #d6c7a7;
   border-radius: 15px;
   font-family: "Playwrite GB S", serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 1px 2px var(--brown);
+  box-shadow: 0 1px 2px #261808;
 }
 
-.nav-link{
+.nav-link {
   text-decoration: none;
   font-size: 1rem;
   padding: 1rem;
-  color: var(--brown);
+  color: #261808;
 }
 
-.navbar-collapse{
+.navbar-collapse {
   flex-grow: 0;
 }
 
-.active{
-  background-color:#85A302;
+.active {
+  background-color: #85A302;
   border-radius: 15px;
   width: 100%;
   text-align: center;
 }
 
 .navbar-nav .nav-link:hover {
-  background-color:#85A302;
+  background-color: #85A302;
   border-radius: 15px;
 }
 
 /*principles*/
-.principles{
-  background-color: var(--green);
+.principles {
+  background-color: #85A302;
   min-height: 350px;
   display: flex;
   flex-wrap: wrap;
@@ -87,46 +75,45 @@ light green #96b703db;*/
   gap: 1rem;
 }
 
-.principle1,.principle2,.principle3{
-  background-color:  #d6c7a7d9;
+.principle1, .principle2, .principle3 {
+  background-color: #d6c7a7;
   border-radius: 40px;
   min-width: 10rem;
   padding: 1rem;
   box-shadow: 0 0 3px #d6c7a7;
 }
 
-#bowl, #pigs, #heart{
+#bowl, #pigs, #heart {
   width: 100%;
   height: 150px;
   object-fit: cover;
   max-width: 17rem;
   height: auto;
   border-radius: 24px;
-  box-shadow: 0 1px 5px #261808bc;
+  box-shadow: 0 1px 5px rgba(38, 24, 8, 0.737254902);
 }
 
-h3{
+h3 {
   text-align: center;
   margin-top: 1rem;
   font-size: 1.3rem;
-  color: var(--brown);
+  color: #261808;
   font-family: "Playwrite GB S", serif;
-  text-shadow: 1px 1px 2px var(--green) ;
+  text-shadow: 1px 1px 2px #85A302;
 }
 
-h1{
-  background-color: var(--green);
+h1 {
+  background-color: #85A302;
   text-align: center;
   padding: 2rem;
   font-size: 2.5rem;
-  color: var(--brown);
-  font-family:"Red Hat Text", serif;
-  text-shadow: 3px 2px 3px var(--beige);
+  color: #261808;
+  font-family: "Red Hat Text", serif;
+  text-shadow: 3px 2px 3px #d6c7a7;
   margin: auto;
 }
 
 /*reviews*/
-
 .reviewSection {
   display: flex;
   flex-wrap: wrap;
@@ -142,14 +129,14 @@ h1{
 
 #review1, #review2, #review3, #review4 {
   max-width: 250px;
-  background-color: var(--brown);
+  background-color: #261808;
   border-radius: 30px;
   padding: 1rem;
-  color: var(--beige);
+  color: #d6c7a7;
 }
 
 /*location and reservation section*/
-.locationReservation{
+.locationReservation {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -158,64 +145,65 @@ h1{
 }
 
 /*location*/
-.location{
+.location {
   text-align: center;
 }
-.location p{
-  color: var(--brown);
+
+.location p {
+  color: #261808;
   font-size: 2rem;
   padding: 2rem;
 }
 
-.map{
+.map {
   border-radius: 60px;
-  border: 10px solid var(--green);
-  box-shadow: 0 1px 5px #281a09;
+  border: 10px solid #85A302;
+  box-shadow: 0 1px 5px rgba(38, 24, 8, 0.737254902);
 }
 
 /*reservation*/
-.reservation{
+.reservation {
   padding: 1rem;
   text-align: center;
 }
 
-.reservation input, textarea{
-  background-color: var(--beige);
+.reservation input, textarea {
+  background-color: #d6c7a7;
   width: 100%;
   height: 3rem;
   font-size: 1.5rem;
   border-radius: 10px;
-  border: 3px solid var(--brown);
-  font-family:"Red Hat Text";
-  box-shadow: 0 1px 2px var(--brown);
+  border: 3px solid #261808;
+  font-family: "Red Hat Text";
+  box-shadow: 0 1px 2px #261808;
   margin-bottom: 1rem;
   text-align: center;
 }
 
-.reservation label{
+.reservation label {
   font-family: "Playwrite GB S";
   font-size: 1.3rem;
 }
 
-#submitButton{
+#submitButton {
   white-space: normal;
   height: auto;
   font-size: 1.5rem;
   font-family: "Playwrite GB S";
   font-weight: bold;
-  background-color: var(--green);
-  box-shadow: 0 1px 3px #281a09;
+  background-color: #85A302;
+  box-shadow: 0 1px 3px rgba(38, 24, 8, 0.737254902);
 }
 
 /*footer*/
-footer{
-  background-color: var(--brown);
-  color: var(--beige);
-  font-family:"Red Hat Text", serif;
+footer {
+  background-color: #261808;
+  color: #d6c7a7;
+  font-family: "Red Hat Text", serif;
   font-size: 1rem;
 }
 
-.footerContainer{
+.footerContainer {
   padding: 2rem 5rem;
   max-height: 400px;
   display: flex;
@@ -225,119 +213,115 @@ footer{
   gap: 1rem;
 }
 
-.schedule ul{
+.schedule ul {
   list-style-type: none;
 }
 
-.schedule ul p{
+.schedule ul p {
   margin: 0;
   padding: 0;
   margin-bottom: -5px;
 }
 
-.address p{
+.address p {
   padding: 0;
 }
 
-.social a{
+.social a {
   font-size: 40px;
   text-decoration: none;
-  color: var(--beige);
+  color: #d6c7a7;
 }
 
-.attribution p{
-  color: #85a302a8;
-  text-align:center;
+.attribution p {
+  color: rgba(133, 163, 2, 0.6588235294);
+  text-align: center;
   padding: 1.2rem;
   margin: auto;
 }
 
-.attribution a{
-  color: #85a302a8;
+.attribution a {
+  color: rgba(133, 163, 2, 0.6588235294);
   text-decoration: none;
 }
 
-@media screen and (max-width:400px){
-.reservation{
-  width: 13rem;
+@media screen and (max-width: 400px) {
+  .reservation {
+    width: 13rem;
+  }
 }
-}
-
 /*menu*/
-
-.menuHeading{
+.menuHeading {
   position: sticky;
   top: 0;
   z-index: 1;
 }
 
-.menuHeading ul{
+.menuHeading ul {
   list-style: disc;
   display: flex;
   justify-content: center;
   gap: 2rem;
   padding: 0.6rem;
   font-family: "Playwrite GB S";
-  background-color: var(--brown);
+  background-color: #261808;
   font-size: 1.2rem;
 }
 
-.menuHeading ul a{
+.menuHeading ul a {
   text-decoration: none;
-  color: var(--beige);
+  color: #d6c7a7;
 }
 
-.menuHeading ul li::marker{
-  color: var(--beige);
+.menuHeading ul li::marker {
+  color: #d6c7a7;
 }
 
-.menuHeading ul :first-child{
+.menuHeading ul :first-child {
   list-style: none;
 }
 
-.menu{
+.menu {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
   margin-bottom: 1rem;
 }
 
-.mainCourses, .drinks, .desserts{
+.mainCourses, .drinks, .desserts {
   display: grid;
-  grid-template-columns: 
-  repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.2rem;
   padding: 1rem 2rem;
   justify-items: center;
 }
 
-.menuSection h3{
+.menuSection h3 {
   font-size: 1.2rem;
   margin-top: 1.3rem;
 }
 
-.drinks{
-  grid-template-columns: 
-  repeat(auto-fit, minmax(250px, 1fr));
+.drinks {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-.foodItems{
-  background-color: #d6c7a756;
+.foodItems {
+  background-color: rgba(214, 199, 167, 0.4039215686);
   display: grid;
   position: relative;
   padding-bottom: 1rem;
   border-radius: 18px;
-  box-shadow: 1px 1px 3px var(--beige);
+  box-shadow: 1px 1px 3px #d6c7a7;
 }
 
-.foodItems img{
+.foodItems img {
   position: relative;
   width: 100%;
   max-height: 250px;
   border-radius: 15px 15px 0 0;
 }
 
-.details{
+.details {
   padding: 1.3rem 0.6rem;
   display: grid;
   grid-template-rows: auto 1fr 5px;
@@ -345,45 +329,44 @@ footer{
   padding-bottom: 2rem;
 }
 
-.detailsSub{
+.detailsSub {
   display: grid;
   grid-template-columns: auto auto;
   justify-content: space-around;
 }
 
-.detailsSub h5{
+.detailsSub h5 {
   font-weight: 600;
   font-size: 1.2rem;
   font-family: "Playwrite GB S";
 }
 
-.details p{
-  color: var(--brown);
+.details p {
+  color: #261808;
   font-size: 1rem;
 }
 
-.details button{
-  background-color: var(--green);
-  color: var(--brown);
+.details button {
+  background-color: #85A302;
+  color: #261808;
   border: none;
   border-radius: 5px;
   font-size: 1rem;
   height: fit-content;
   width: fit-content;
   padding: 0.5rem 1rem;
-  box-shadow: 0 1px 3px var(--brown);
+  box-shadow: 0 1px 3px #261808;
   margin: auto;
 }
 
-:hover.details button{
-  background-color: var(--brown);
-  color: var(--beige);
+:hover.details button {
+  background-color: #261808;
+  color: #d6c7a7;
   transition: all 300ms ease-out;
 }
 
 /*Events*/
-
-.eventTypeSection{
+.eventTypeSection {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -391,30 +374,30 @@ footer{
   gap: 1rem;
 }
 
-.eventType img{
+.eventType img {
   width: 100%;
   height: 150px;
   object-fit: cover;
   border-radius: 0.2rem;
 }
 
-.eventType{
-  background-color: var(--brown);
-  color: var(--beige);
-  font-family:"Red Hat Text";
+.eventType {
+  background-color: #261808;
+  color: #d6c7a7;
+  font-family: "Red Hat Text";
   padding: 1rem;
   width: 300px;
   border-radius: 1rem;
   text-align: center;
-  box-shadow: 0 1px 5px var(--brown);
+  box-shadow: 0 1px 5px #261808;
 }
 
-.eventType h4{
+.eventType h4 {
   margin-top: 0.5rem;
 }
 
 /*form section*/
-.eventsInfo{
+.eventsInfo {
   padding: 1rem;
   display: flex;
   flex-wrap: wrap;
@@ -422,127 +405,123 @@ footer{
   justify-content: space-around;
 }
 
-.eventsForm{
+.eventsForm {
   min-width: 250px;
   text-align: center;
   padding: 1rem;
 }
 
-.eventsForm label{
+.eventsForm label {
   font-family: "Playwrite GB S";
   font-weight: bold;
 }
-.eventsForm input, textarea{
-  background-color: var(--beige);
+
+.eventsForm input, textarea {
+  background-color: #d6c7a7;
   width: 100%;
   height: 2rem;
   font-size: 1.1rem;
   border-radius: 10px;
-  border: 3px solid var(--brown);
-  font-family:"Red Hat Text";
-  box-shadow: 0 1px 2px var(--brown);
+  border: 3px solid #261808;
+  font-family: "Red Hat Text";
+  box-shadow: 0 1px 2px #261808;
   margin-bottom: 1rem;
   margin-top: 0.5rem;
   text-align: center;
 }
 
-.eventsInfo h3{
+.eventsInfo h3 {
   max-width: 300px;
   height: fit-content;
   font-size: 2rem;
 }
 
 /*about us grid*/
-.blogContainer{
+.blogContainer {
   display: grid;
   justify-items: center;
   padding: 5rem;
   gap: 3rem;
   grid-template-columns: 0.5fr 0.7fr;
-  grid-template-rows: repeat(3,auto-fit);
-  grid-template-areas: 
-  "aside1 art1"
-  "aside1 art2"
-  "aside1 art3";
+  grid-template-rows: repeat(3, auto-fit);
+  grid-template-areas: "aside1 art1" "aside1 art2" "aside1 art3";
 }
 
-.blogContainer h4, p{
+.blogContainer h4, p {
   padding: 1rem 2rem 1rem 2rem;
   line-height: 1.5rem;
   text-align: justify;
 }
 
-.blogContainer h4{
+.blogContainer h4 {
   font-family: "Playwrite GB S";
   font-size: 2rem;
-  text-shadow: 1px 1px 2px var(--green);
+  text-shadow: 1px 1px 2px #85A302;
 }
 
-.blogAside{
-  background-color: #2618080f;
+.blogAside {
+  background-color: #d6c7a7;
   padding: 1rem;
   grid-area: aside1;
   font-family: "Playwrite GB S";
   border-radius: 15px;
-  box-shadow: 0 2px 10px #26180854;
+  box-shadow: 0 2px 10px rgba(38, 24, 8, 0.737254902);
 }
 
-.blogAside h4{
+.blogAside h4 {
   font-size: 1.8rem;
   padding: 1rem;
 }
 
-.blogAside ul{
-  list-style: "🌿"; 
+.blogAside ul {
+  list-style: "🌿";
   font-size: 1.2rem;
-  font-family:"Red Hat Text";
+  font-family: "Red Hat Text";
   padding: 2.5rem;
   line-height: 3rem;
 }
 
-.blogAside ul a{
+.blogAside ul a {
   text-decoration: none;
-  color: var(--brown);
+  color: #261808;
 }
 
-.article1, .article2, .article3{
-  box-shadow: 0 2px 10px #26180854;
-  border: 5px solid var(--brown);
+.article1, .article2, .article3 {
+  box-shadow: 0 2px 10px rgba(38, 24, 8, 0.737254902);
+  border: 5px solid #261808;
   border-radius: 15px;
   padding-bottom: 3rem;
 }
-.article1{
+
+.article1 {
   grid-area: art1;
-  
 }
 
-.art1Img{
+.art1Img {
   width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
 
-
-.article1 h4,.article2 h4, .article3 h4{
+.article1 h4, .article2 h4, .article3 h4 {
   text-align: center;
 }
 
-.article2{
+.article2 {
   grid-area: art2;
 }
 
-.article3{
+.article3 {
   grid-area: art3;
 }
 
-.readMoreArt button{
-  background-color: var(--green);
+.readMoreArt button {
+  background-color: #85A302;
   padding: 10px 20px;
   font-family: "Playwrite GB S";
-  color: var(--brown);
+  color: #261808;
   border-radius: 2px;
-  
 }
 
 .readMoreArt {
@@ -552,8 +531,7 @@ footer{
 }
 
 /*About Us*/
-
-.aboutUsContainer{
+.aboutUsContainer {
   min-height: 35rem;
   padding: 1rem;
   display: flex;
@@ -562,23 +540,24 @@ footer{
   align-items: center;
 }
 
-.aboutUsContainer img{
+.aboutUsContainer img {
   max-width: 270px;
   min-width: 100px;
   height: auto;
 }
 
-.aboutUsContainer .text1,.text2{
+.aboutUsContainer .text1, .text2 {
   max-width: 350px;
   min-width: 100px;
   height: auto;
-  background-color: var(--brown);
-  color: var(--beige);
+  background-color: #261808;
+  color: #d6c7a7;
 }
 
-.aboutUsContainer img,.text1,.text2{
+.aboutUsContainer img, .text1, .text2 {
   border-radius: 10px;
-  box-shadow: 2px 2px 10px var(--brown);
+  box-shadow: 2px 2px 10px #261808;
   margin: 1rem;
 }
 
+/*# sourceMappingURL=styles.css.map */

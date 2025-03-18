@@ -1,0 +1,578 @@
+
+$color1: #85A302;
+$color1a: #85a302a8;
+$color2: #d6c7a7;
+$color2a: #d6c7a767;
+$color3: #261808;
+$color3a: #261808bc;
+
+
+*{margin: 0;
+  padding: 0;
+}
+
+.container{
+  background-color: $color2a;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+#logo{
+  filter: grayscale(20%);
+}
+
+#navbarSupportedContent{
+  margin-bottom: auto;
+}
+
+.navbar-nav{
+  gap: 2rem;
+  margin: 3rem;
+  justify-content: space-between;
+}
+
+.navbar-toggler{
+  background-color: $color2;
+  border: none;
+}
+
+.nav-item{
+  background-color: $color2;
+  border-radius: 15px;
+  font-family: "Playwrite GB S", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 2px $color3;
+}
+
+.nav-link{
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 1rem;
+  color: $color3;
+}
+
+.navbar-collapse{
+  flex-grow: 0;
+}
+
+.active{
+  background-color: $color1;
+  border-radius: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: $color1;
+  border-radius: 15px;
+}
+
+/*principles*/
+.principles{
+  background-color: $color1;
+  min-height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.principle1,.principle2,.principle3{
+  background-color: $color2;
+  border-radius: 40px;
+  min-width: 10rem;
+  padding: 1rem;
+  box-shadow: 0 0 3px $color2;
+}
+
+#bowl, #pigs, #heart{
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  max-width: 17rem;
+  height: auto;
+  border-radius: 24px;
+  box-shadow: 0 1px 5px $color3a;
+}
+
+h3{
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  color: $color3;
+  font-family: "Playwrite GB S", serif;
+  text-shadow: 1px 1px 2px $color1;
+}
+
+h1{
+  background-color: $color1;
+  text-align: center;
+  padding: 2rem;
+  font-size: 2.5rem;
+  color: $color3;
+  font-family:"Red Hat Text", serif;
+  text-shadow: 3px 2px 3px $color2;
+  margin: auto;
+}
+
+/*reviews*/
+
+.reviewSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.reviewSection h4, p {
+  font-family: "Red Hat Text", serif;
+  padding: 2rem;
+}
+
+#review1, #review2, #review3, #review4 {
+  max-width: 250px;
+  background-color: $color3;
+  border-radius: 30px;
+  padding: 1rem;
+  color: $color2;
+}
+
+/*location and reservation section*/
+.locationReservation{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 2rem;
+  gap: 3rem;
+}
+
+/*location*/
+.location{
+  text-align: center;
+}
+.location p{
+  color: $color3;
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+.map{
+  border-radius: 60px;
+  border: 10px solid $color1;
+  box-shadow: 0 1px 5px $color3a;
+}
+
+/*reservation*/
+.reservation{
+  padding: 1rem;
+  text-align: center;
+}
+
+.reservation input, textarea{
+  background-color: $color2;
+  width: 100%;
+  height: 3rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  border: 3px solid $color3;
+  font-family:"Red Hat Text";
+  box-shadow: 0 1px 2px $color3;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.reservation label{
+  font-family: "Playwrite GB S";
+  font-size: 1.3rem;
+}
+
+#submitButton{
+  white-space: normal;
+  height: auto;
+  font-size: 1.5rem;
+  font-family: "Playwrite GB S";
+  font-weight: bold;
+  background-color: $color1;
+  box-shadow: 0 1px 3px $color3a;
+}
+
+/*footer*/
+footer{
+  background-color: $color3;
+  color: $color2;
+  font-family:"Red Hat Text", serif;
+  font-size: 1rem;
+}
+
+.footerContainer{
+  padding: 2rem 5rem;
+  max-height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.schedule ul{
+  list-style-type: none;
+}
+
+.schedule ul p{
+  margin: 0;
+  padding: 0;
+  margin-bottom: -5px;
+}
+
+.address p{
+  padding: 0;
+}
+
+.social a{
+  font-size: 40px;
+  text-decoration: none;
+  color: $color2;
+}
+
+.attribution p{
+  color: $color1a;
+  text-align:center;
+  padding: 1.2rem;
+  margin: auto;
+}
+
+.attribution a{
+  color: $color1a;
+  text-decoration: none;
+}
+
+@media screen and (max-width:400px){
+.reservation{
+  width: 13rem;
+}
+}
+
+/*menu*/
+
+.menuHeading{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.menuHeading ul{
+  list-style: disc;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0.6rem;
+  font-family: "Playwrite GB S";
+  background-color: $color3;
+  font-size: 1.2rem;
+}
+
+.menuHeading ul a{
+  text-decoration: none;
+  color: $color2;
+}
+
+.menuHeading ul li::marker{
+  color: $color2;
+}
+
+.menuHeading ul :first-child{
+  list-style: none;
+}
+
+.menu{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mainCourses, .drinks, .desserts{
+  display: grid;
+  grid-template-columns: 
+  repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.2rem;
+  padding: 1rem 2rem;
+  justify-items: center;
+}
+
+.menuSection h3{
+  font-size: 1.2rem;
+  margin-top: 1.3rem;
+}
+
+.drinks{
+  grid-template-columns: 
+  repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.foodItems{
+  background-color: $color2a;
+  display: grid;
+  position: relative;
+  padding-bottom: 1rem;
+  border-radius: 18px;
+  box-shadow: 1px 1px 3px $color2;
+}
+
+.foodItems img{
+  position: relative;
+  width: 100%;
+  max-height: 250px;
+  border-radius: 15px 15px 0 0;
+}
+
+.details{
+  padding: 1.3rem 0.6rem;
+  display: grid;
+  grid-template-rows: auto 1fr 5px;
+  grid-row-gap: 1rem;
+  padding-bottom: 2rem;
+}
+
+.detailsSub{
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-around;
+}
+
+.detailsSub h5{
+  font-weight: 600;
+  font-size: 1.2rem;
+  font-family: "Playwrite GB S";
+}
+
+.details p{
+  color: $color3;
+  font-size: 1rem;
+}
+
+.details button{
+  background-color: $color1;
+  color: $color3;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  height: fit-content;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 1px 3px $color3;
+  margin: auto;
+}
+
+:hover.details button{
+  background-color: $color3;
+  color: $color2;
+  transition: all 300ms ease-out;
+}
+
+/*Events*/
+
+.eventTypeSection{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.eventType img{
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 0.2rem;
+}
+
+.eventType{
+  background-color: $color3;
+  color: $color2;
+  font-family:"Red Hat Text";
+  padding: 1rem;
+  width: 300px;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 1px 5px $color3;
+}
+
+.eventType h4{
+  margin-top: 0.5rem;
+}
+
+/*form section*/
+.eventsInfo{
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.eventsForm{
+  min-width: 250px;
+  text-align: center;
+  padding: 1rem;
+}
+
+.eventsForm label{
+  font-family: "Playwrite GB S";
+  font-weight: bold;
+}
+.eventsForm input, textarea{
+  background-color: $color2;
+  width: 100%;
+  height: 2rem;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border: 3px solid $color3;
+  font-family:"Red Hat Text";
+  box-shadow: 0 1px 2px $color3;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.eventsInfo h3{
+  max-width: 300px;
+  height: fit-content;
+  font-size: 2rem;
+}
+
+/*about us grid*/
+.blogContainer{
+  display: grid;
+  justify-items: center;
+  padding: 5rem;
+  gap: 3rem;
+  grid-template-columns: 0.5fr 0.7fr;
+  grid-template-rows: repeat(3,auto-fit);
+  grid-template-areas: 
+  "aside1 art1"
+  "aside1 art2"
+  "aside1 art3";
+}
+
+.blogContainer h4, p{
+  padding: 1rem 2rem 1rem 2rem;
+  line-height: 1.5rem;
+  text-align: justify;
+}
+
+.blogContainer h4{
+  font-family: "Playwrite GB S";
+  font-size: 2rem;
+  text-shadow: 1px 1px 2px $color1;
+}
+
+.blogAside{
+  background-color: $color2;
+  padding: 1rem;
+  grid-area: aside1;
+  font-family: "Playwrite GB S";
+  border-radius: 15px;
+  box-shadow: 0 2px 10px $color3a;
+}
+
+.blogAside h4{
+  font-size: 1.8rem;
+  padding: 1rem;
+}
+
+.blogAside ul{
+  list-style: "🌿"; 
+  font-size: 1.2rem;
+  font-family:"Red Hat Text";
+  padding: 2.5rem;
+  line-height: 3rem;
+}
+
+.blogAside ul a{
+  text-decoration: none;
+  color: $color3;
+}
+
+.article1, .article2, .article3{
+  box-shadow: 0 2px 10px $color3a;
+  border: 5px solid $color3;
+  border-radius: 15px;
+  padding-bottom: 3rem;
+}
+.article1{
+  grid-area: art1;
+  
+}
+
+.art1Img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+
+.article1 h4,.article2 h4, .article3 h4{
+  text-align: center;
+}
+
+.article2{
+  grid-area: art2;
+}
+
+.article3{
+  grid-area: art3;
+}
+
+.readMoreArt button{
+  background-color: $color1;
+  padding: 10px 20px;
+  font-family: "Playwrite GB S";
+  color: $color3;
+  border-radius: 2px;
+  
+}
+
+.readMoreArt {
+  margin: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*About Us*/
+
+.aboutUsContainer{
+  min-height: 35rem;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.aboutUsContainer img{
+  max-width: 270px;
+  min-width: 100px;
+  height: auto;
+}
+
+.aboutUsContainer .text1,.text2{
+  max-width: 350px;
+  min-width: 100px;
+  height: auto;
+  background-color: $color3;
+  color: $color2;
+}
+
+.aboutUsContainer img,.text1,.text2{
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px $color3;
+  margin: 1rem;
+}
