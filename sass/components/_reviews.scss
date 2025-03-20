@@ -1,0 +1,22 @@
+/*reviews*/
+
+.reviewSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.reviewSection h4, p {
+  font-family: "Red Hat Text", serif;
+  padding: 2rem;
+}
+
+#review1, #review2, #review3, #review4 {
+  max-width: 250px;
+  background-color: $color3;
+  border-radius: 30px;
+  padding: 1rem;
+  color: $color2;
+}

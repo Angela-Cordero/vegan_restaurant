@@ -1,0 +1,119 @@
+/*menu*/
+
+.menuHeading{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.menuHeading ul{
+  list-style: disc;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0.6rem;
+  font-family: "Playwrite GB S";
+  background-color: $color3;
+  font-size: 1.2rem;
+}
+
+.menuHeading ul a{
+  text-decoration: none;
+  color: $color2;
+}
+
+.menuHeading ul li::marker{
+  color: $color2;
+}
+
+.menuHeading ul :first-child{
+  list-style: none;
+}
+
+.menu{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mainCourses, .drinks, .desserts{
+  display: grid;
+  grid-template-columns: 
+  repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.2rem;
+  padding: 1rem 2rem;
+  justify-items: center;
+}
+
+.menuSection h3{
+  font-size: 1.2rem;
+  margin-top: 1.3rem;
+}
+
+.drinks{
+  grid-template-columns: 
+  repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.foodItems{
+  background-color: $color2;
+  display: grid;
+  position: relative;
+  padding-bottom: 1rem;
+  border-radius: 18px;
+  box-shadow: 1px 1px 3px $color2;
+}
+
+.foodItems img{
+  position: relative;
+  width: 100%;
+  max-height: 250px;
+  border-radius: 15px 15px 0 0;
+}
+
+.details{
+  padding: 1.3rem 0.6rem;
+  display: grid;
+  grid-template-rows: auto 1fr 5px;
+  grid-row-gap: 1rem;
+  padding-bottom: 2rem;
+}
+
+.detailsSub{
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-around;
+}
+
+.detailsSub h5{
+  font-weight: 600;
+  font-size: 1.2rem;
+  font-family: "Playwrite GB S";
+}
+
+.details p{
+  color: $color3;
+  font-size: 1rem;
+}
+
+.details button{
+  background-color: $color1;
+  color: $color3;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  height: fit-content;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 1px 3px $color3;
+  margin: auto;
+}
+
+:hover.details button{
+  background-color: $color3;
+  color: $color2;
+  transform: scale(1.2);
+  transition: all 0.5s ease-out;
+}
+
