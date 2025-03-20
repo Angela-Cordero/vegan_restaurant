@@ -64,7 +64,7 @@
   
 }
 
-.art1Img{
+.blogContainer Img{
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -87,10 +87,13 @@
 .readMoreArt button{
   background-color: $color1;
   padding: 10px 20px;
-  font-family: "Playwrite GB S";
-  color: $color3;
   border-radius: 2px;
   
+    a{
+      text-decoration: none;
+      color: $color3;
+      font-family: "Playwrite GB S";
+    }
 }
 
 .readMoreArt {
