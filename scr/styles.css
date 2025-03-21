@@ -45,6 +45,11 @@
   text-align: center;
 }
 
+.navbar-nav .nav-item:hover {
+  background-color: #85A302;
+  border-radius: 15px;
+}
+
 /*footer*/
 footer {
   background-color: #261808;
