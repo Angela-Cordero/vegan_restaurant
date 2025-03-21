@@ -2,56 +2,54 @@
 
 /*blog*/
 .blogContainer{
-  display: grid;
-  justify-items: center;
-  padding: 5rem;
-  gap: 3rem;
-  grid-template-columns: 0.5fr 0.7fr;
-  grid-template-rows: repeat(3,auto-fit);
-  grid-template-areas: 
-  "aside1 art1"
-  "aside1 art2"
-  "aside1 art3";
-}
-
-.blogContainer h4, p{
-  padding: 1rem 2rem 1rem 2rem;
-  line-height: 1.5rem;
-  text-align: justify;
-}
-
-.blogContainer h4{
-  font-family: "Playwrite GB S";
-  font-size: 2rem;
-  text-shadow: 1px 1px 2px $color1;
-}
-
-.blogAside{
-  background-color: $color2;
   padding: 1rem;
-  grid-area: aside1;
-  font-family: "Playwrite GB S";
-  border-radius: 15px;
-  box-shadow: 0 2px 10px $color3a;
+
+  .nav-link{
+    background-color: $color2;
+    border: 1px solid $color3;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px $color3a;
+    font-family: "Playwrite GB S";
+    margin-bottom: 1rem;
+  }
+
+  .nav-link:hover{
+  color: $color3 !important;
+  background: $color1 !important;
+  border: none !important;
+  }
+
+  .article1, .article2, .article3{
+    background-color: $color2;
+  }
+
 }
 
-.blogAside h4{
-  font-size: 1.8rem;
-  padding: 1rem;
-}
+.active{
+    background-color: $color3 !important;
+    border: none !important;
+    color: $color2 !important;
 
-.blogAside ul{
-  list-style: "🌿"; 
-  font-size: 1.2rem;
-  font-family:"Red Hat Text";
-  padding: 2.5rem;
-  line-height: 3rem;
-}
+    h4{
+        font-family: "Playwrite GB S";
+        font-size: 1.4rem;
+        text-shadow: 1px 1px 2px $color1;
+        text-align: center;
+        margin-top: 1rem;
+        color: $color3;
+        
+    }
 
-.blogAside ul a{
-  text-decoration: none;
-  color: $color3;
-}
+    p{
+      color: $color3 !important;
+      padding: 1rem 2rem 1rem 2rem;
+      line-height: 1.5rem;
+      text-align: justify;
+    }
+  }
+
+
+
 
 .article1, .article2, .article3{
   box-shadow: 0 2px 10px $color3a;
@@ -59,10 +57,7 @@
   border-radius: 15px;
   padding-bottom: 3rem;
 }
-.article1{
-  grid-area: art1;
-  
-}
+
 
 .blogContainer Img{
   width: 100%;
@@ -72,32 +67,22 @@
 }
 
 
-.article1 h4,.article2 h4, .article3 h4{
-  text-align: center;
-}
+.readMoreArt {
+  margin: 2rem;
+  display: flex;
+  justify-content: flex-end;
 
-.article2{
-  grid-area: art2;
-}
+  button{
+    background-color: $color1;
+    padding: 10px 20px;
+    border-radius: 2px;
 
-.article3{
-  grid-area: art3;
-}
-
-.readMoreArt button{
-  background-color: $color1;
-  padding: 10px 20px;
-  border-radius: 2px;
-  
     a{
       text-decoration: none;
       color: $color3;
       font-family: "Playwrite GB S";
     }
+  }
 }
 
-.readMoreArt {
-  margin: 2rem;
-  display: flex;
-  justify-content: flex-end;
-}
+
