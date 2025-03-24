@@ -1,3 +1,7 @@
+@import "../utilities/variables";
+@import "../utilities/extends";
+@import "../utilities/mixins";
+
 /*menu*/
 
 .menuHeading{
@@ -8,8 +12,7 @@
 
 .menuHeading ul{
   list-style: disc;
-  display: flex;
-  justify-content: center;
+  @extend %flex-center;
   gap: 2rem;
   padding: 0.6rem;
   font-family: "Playwrite GB S";

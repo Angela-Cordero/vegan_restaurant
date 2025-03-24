@@ -1,4 +1,6 @@
 @import "../utilities/variables";
+@import "../utilities/extends";
+@import "../utilities/mixins";
 
 /*footer*/
 footer{
@@ -11,21 +13,19 @@ footer{
 .footerContainer{
   padding: 2rem 5rem;
   max-height: 400px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  @extend %flex-center;
+  justify-content: space-around !important;
   gap: 1rem;
 }
 
 .schedule ul{
+  padding: 0;
   list-style-type: none;
-}
 
-.schedule ul p{
+  p{
   margin: 0;
   padding: 0;
-  margin-bottom: -5px;
+  }
 }
 
 .address p{

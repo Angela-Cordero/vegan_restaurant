@@ -1,14 +1,12 @@
 @import "../utilities/variables";
+@import "../utilities/extends";
+@import "../utilities/mixins";
 
-/*About Us*/
-
+/*About us*/
 .aboutUsContainer{
   min-height: 35rem;
   padding: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
+  @extend %flex-center;
 }
 
 .aboutUsContainer img{

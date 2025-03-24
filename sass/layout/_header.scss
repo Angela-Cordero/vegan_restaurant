@@ -1,5 +1,8 @@
 @import "../utilities/variables";
+@import "../utilities/extends";
+@import "../utilities/mixins";
 
+/*Header*/
 #logo{
   filter: grayscale(20%);
 }
@@ -23,9 +26,7 @@
   background-color: $color2;
   border-radius: 15px;
   font-family: "Playwrite GB S", serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex-center;
   box-shadow: 0 1px 2px $color3;
 }
 

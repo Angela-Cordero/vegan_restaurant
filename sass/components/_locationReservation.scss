@@ -1,10 +1,10 @@
 @import "../utilities/variables";
+@import "../utilities/extends";
+@import "../utilities/mixins";
 
 /*location and reservation section*/
 .locationReservation{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  @extend %flex-center;
   padding: 2rem;
   gap: 3rem;
 }

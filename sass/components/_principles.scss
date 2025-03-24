@@ -1,13 +1,13 @@
 @import "../utilities/variables";
+@import "../utilities/extends";
+@import "../utilities/mixins";
 
 /*principles*/
 .principles{
   background-color: $color1;
   min-height: 350px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
+  @extend %flex-center;
+  justify-content: space-evenly !important;
   padding: 1rem;
   gap: 1rem;
 }
