@@ -1,5 +1,9 @@
+@import "../utilities/variables";
+@import "../utilities/extends";
+@import "../layout/titles";
+
 //Titles
-h1{
+%h1{
   background-color: $color1;
   text-align: center;
   padding: 2rem;
@@ -10,7 +14,7 @@ h1{
   margin: auto;
 }
 
-h3{
+%h3{
   text-align: center;
   margin-top: 1rem;
   font-size: 1.3rem;
@@ -19,7 +23,7 @@ h3{
   text-shadow: 1px 1px 2px $color1;
 }
 
-h4{
+%h4{
   font-family: "Playwrite GB S";
   text-shadow: 1px 1px 2px $color1;
   font-size: 1.4rem;
