@@ -1,14 +1,12 @@
 @import "../utilities/variables";
 @import "../utilities/extends";
-@import "../utilities/mixins";
+
 
 /*form section*/
 .eventsInfo{
   padding: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
+  @extend %flex-center;
+  justify-content: space-around !important;
 }
 
 .eventsForm{
@@ -18,21 +16,15 @@
 }
 
 .eventsForm label{
-  font-family: "Playwrite GB S";
-  font-weight: bold;
-}
+  @extend %form-label;
+} 
+
 .eventsForm input, textarea{
-  background-color: $color2;
-  width: 100%;
-  height: 2rem;
-  font-size: 1.1rem;
-  border-radius: 10px;
-  border: 3px solid $color3;
-  font-family:"Red Hat Text";
-  box-shadow: 0 1px 2px $color3;
-  margin-bottom: 1rem;
-  margin-top: 0.5rem;
-  text-align: center;
+  @extend %form-input;
+}
+
+#submitButton{
+  @extend %form-button;
 }
 
 .eventsInfo h3{

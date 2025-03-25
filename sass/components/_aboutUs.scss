@@ -1,6 +1,6 @@
 @import "../utilities/variables";
 @import "../utilities/extends";
-@import "../utilities/mixins";
+
 
 /*About us*/
 .aboutUsContainer{
@@ -19,8 +19,7 @@
   max-width: 350px;
   min-width: 100px;
   height: auto;
-  background-color: $color3;
-  color: $color2;
+  @extend %color-combination1;
 }
 
 .aboutUsContainer img,.text1,.text2{

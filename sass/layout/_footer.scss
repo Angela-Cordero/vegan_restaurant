@@ -1,6 +1,6 @@
 @import "../utilities/variables";
 @import "../utilities/extends";
-@import "../utilities/mixins";
+
 
 /*footer*/
 footer{
@@ -12,7 +12,7 @@ footer{
 
 .footerContainer{
   padding: 2rem 5rem;
-  max-height: 400px;
+  max-height: 500px;
   @extend %flex-center;
   justify-content: space-around !important;
   gap: 1rem;
@@ -20,6 +20,7 @@ footer{
 
 .schedule ul{
   padding: 0;
+  text-align: center;
   list-style-type: none;
 
   p{
@@ -29,7 +30,7 @@ footer{
 }
 
 .address p{
-  padding: 0;
+  text-align: justify;
 }
 
 .social a{

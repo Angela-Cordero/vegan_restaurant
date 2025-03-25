@@ -1,7 +1,4 @@
-@import "../utilities/variables";
-@import "../utilities/extends";
-@import "../utilities/mixins";
-
+//Titles
 h1{
   background-color: $color1;
   text-align: center;
@@ -20,4 +17,14 @@ h3{
   color: $color3;
   font-family: "Playwrite GB S", serif;
   text-shadow: 1px 1px 2px $color1;
+}
+
+h4{
+  font-family: "Playwrite GB S";
+  text-shadow: 1px 1px 2px $color1;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  text-align: center;
+  color: $color3;
+  font-weight: bold;
 }

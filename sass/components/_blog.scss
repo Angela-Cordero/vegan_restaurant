@@ -1,10 +1,18 @@
 @import "../utilities/variables";
 @import "../utilities/extends";
-@import "../utilities/mixins";
+
 
 /*blog*/
 .blogContainer{
-  padding: 1rem;
+  padding: 2rem 2rem;
+  min-width: 280px;
+  max-width: 900px;
+  margin: auto;
+  
+  .nav-tabs{
+    @extend %flex-center;
+    gap: 0.5rem;
+  }
 
   .nav-link{
     background-color: $color2;
@@ -13,6 +21,7 @@
     box-shadow: 0 2px 10px $color3a;
     font-family: "Playwrite GB S";
     margin-bottom: 1rem;
+    max-width: 200px;
   }
 
   .nav-link:hover{
@@ -32,16 +41,6 @@
     border: none !important;
     color: $color2 !important;
 
-    h4{
-        font-family: "Playwrite GB S";
-        font-size: 1.4rem;
-        text-shadow: 1px 1px 2px $color1;
-        text-align: center;
-        margin-top: 1rem;
-        color: $color3;
-        
-    }
-
     p{
       color: $color3 !important;
       padding: 1rem 2rem 1rem 2rem;
@@ -50,24 +49,28 @@
     }
   }
 
-
-
-
 .article1, .article2, .article3{
   box-shadow: 0 2px 10px $color3a;
   border: 5px solid $color3;
-  border-radius: 15px;
+  border-radius: 18px;
   padding-bottom: 3rem;
+  
 }
-
 
 .blogContainer Img{
   width: 100%;
-  height: auto;
+  min-width: 200px;
+  max-height: 400px;
   object-fit: cover;
+  object-position: 75% 35%;
   border-radius: 10px 10px 0 0;
+  border-radius: 13px 13px 0px 0px;
 }
-
+.articleImg{
+  margin: 2rem;
+  border-radius: 14px 14px 0px 0px;
+  box-shadow: 0 2px 15px $color3;
+  }
 
 .readMoreArt {
   margin: 2rem;
