@@ -3,26 +3,30 @@
 @import "../layout/titles";
 
 /*Header*/
-#logo{
+#logo {
   filter: grayscale(20%);
 }
 
-#navbarSupportedContent{
+#navbarSupportedContent {
   margin-bottom: auto;
 }
 
-.navbar-nav{
+h1 {
+  @extend %h1;
+}
+
+.navbar-nav {
   gap: 2rem;
   margin: 3rem;
   justify-content: space-between;
 }
 
-.navbar-toggler{
+.navbar-toggler {
   background-color: $color2;
   border: none;
 }
 
-.nav-item{
+.nav-item {
   background-color: $color2;
   border-radius: 15px;
   font-family: "Playwrite GB S", serif;
@@ -30,18 +34,18 @@
   box-shadow: 0 1px 2px $color3;
 }
 
-.nav-link{
+.nav-link {
   text-decoration: none;
   font-size: 1rem;
   padding: 1rem;
   color: $color3;
 }
 
-.navbar-collapse{
+.navbar-collapse {
   flex-grow: 0;
 }
 
-.active{
+.active {
   background-color: $color1;
   border-radius: 15px;
   width: 100%;

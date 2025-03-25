@@ -1,110 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<!-- Bootstrap JavaScript (includes Popper.js) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap JavaScript (includes Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Londrina+Sketch&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Young+Serif&display=swap" rel="stylesheet">
-  <link rel="icon" href="scr/images/logo.png" type="image/icon type">
-  
-  <link rel="stylesheet" href="scr/styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Londrina+Sketch&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/logo.png" type="image/icon type" />
 
-<title>About us</title>
-</head>
-<body>
-  <div class="container">
-    <header>
-      <div class="headingContainer">
-        <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="scr/images/logo.png" id="logo" class="Logo" width="150rem"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="menu.html">Menu</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="events.html">Events</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">About us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="blog.html">Blog</a>
-                </li>
-              </ul>
+    <link rel="stylesheet" href="src/styles.css" />
+
+    <title>About us</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="headingContainer">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"
+                ><img
+                  src="images/logo.png"
+                  id="logo"
+                  class="Logo"
+                  width="150rem"
+              /></a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Menu</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="events.html">Events</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">About us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <h1>About Us</h1>
+        <div class="aboutUsContainer">
+          <div>
+            <img src="images/woman.jpg" alt="woman" id="imgWoman" />
           </div>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <h1>About Us</h1>
-      <div class="aboutUsContainer">
-        <div>
-          <img src="scr/images/woman.jpg" alt="woman" id="imgWoman">
-        </div>
-        <div class="text1">
-          <p>At Vegan Life, my passion for plant-based food is at the heart of everything we do. I’m Emma Carter, a lifelong food lover and dedicated vegan, and I started this restaurant to share my love for delicious, sustainable eating. My journey began 7 years ago in my own kitchen, where I experimented with fresh, local ingredients to create meals that nourish both the body and the planet. </p>
+          <div class="text1">
+            <p>
+              At Vegan Life, my passion for plant-based food is at the heart of
+              everything we do. I’m Emma Carter, a lifelong food lover and
+              dedicated vegan, and I started this restaurant to share my love
+              for delicious, sustainable eating. My journey began 7 years ago in
+              my own kitchen, where I experimented with fresh, local ingredients
+              to create meals that nourish both the body and the planet.
+            </p>
 
-          <p>Today, Vegan Life is more than just a restaurant; it’s a community. I believe that great food has the power to bring people together, and I want to show that plant-based eating can be exciting, satisfying, and full of flavor. From hearty bowls to indulgent desserts, every dish is made with love and creativity. Whether you're vegan or just curious, I invite you to experience the warmth and taste of Vegan Life, where every bite makes a difference.</p>
-        </div>
-        <div>
-          <img src="scr/images/man.jpg" alt="man" id="imgan">
-        </div>
-        <div class="text2">
-          <p>At Vegan Life, this journey isn’t just mine—it’s ours. I’m Jake Thompson, and alongside Emma, I pour my heart into making this restaurant a place where great food and great people come together. I wasn’t always vegan, but Emma’s passion for plant-based cooking completely changed the way I see food. Now, I love creating dishes that surprise and inspire, proving that plant-based meals can be just as satisfying, flavorful, and comforting as anything else.</p>
-          
-          <p>This restaurant isn’t just a business—it’s a reflection of our values, our creativity, and our belief that food should bring people together. I can’t wait for you to be part of our story!</p>
-        </div>
-      </div>
+            <p>
+              Today, Vegan Life is more than just a restaurant; it’s a
+              community. I believe that great food has the power to bring people
+              together, and I want to show that plant-based eating can be
+              exciting, satisfying, and full of flavor. From hearty bowls to
+              indulgent desserts, every dish is made with love and creativity.
+              Whether you're vegan or just curious, I invite you to experience
+              the warmth and taste of Vegan Life, where every bite makes a
+              difference.
+            </p>
+          </div>
+          <div>
+            <img src="images/man.jpg" alt="man" id="imgan" />
+          </div>
+          <div class="text2">
+            <p>
+              At Vegan Life, this journey isn’t just mine—it’s ours. I’m Jake
+              Thompson, and alongside Emma, I pour my heart into making this
+              restaurant a place where great food and great people come
+              together. I wasn’t always vegan, but Emma’s passion for
+              plant-based cooking completely changed the way I see food. Now, I
+              love creating dishes that surprise and inspire, proving that
+              plant-based meals can be just as satisfying, flavorful, and
+              comforting as anything else.
+            </p>
 
-    </main>
-    <footer>
-      <div class="footerContainer">
-        <section class="schedule">
-          <ul>
-            <p><strong>Open hours</strong></p>
-            <li>Friday: 5-10pm</li>
-            <li>Saturday: 4-10pm</li>
-            <li>Sunday: 4-9pm</li>
-          </ul>
-        </section>
-        <section class="address">
-          <p><strong>Our address</strong>
-            <br>
-          2004 Pennsylvania Avenue
-            <br> 
-          New Brunswick NJ 08901
+            <p>
+              This restaurant isn’t just a business—it’s a reflection of our
+              values, our creativity, and our belief that food should bring
+              people together. I can’t wait for you to be part of our story!
+            </p>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="footerContainer">
+          <section class="schedule">
+            <ul>
+              <p><strong>Open hours</strong></p>
+              <li>Friday: 5-10pm</li>
+              <li>Saturday: 4-10pm</li>
+              <li>Sunday: 4-9pm</li>
+            </ul>
+          </section>
+          <section class="address">
+            <p>
+              <strong>Our address</strong>
+              <br />
+              2004 Pennsylvania Avenue
+              <br />
+              New Brunswick NJ 08901
+            </p>
+          </section>
+          <section class="social">
+            <a href="https://www.instagram.com/" target="_blank">
+              <i class="fa-brands fa-instagram" id="instagram"></i>
+            </a>
+            <a href="https://www.whatsapp.com/">
+              <i class="fa-brands fa-whatsapp" id="whatsapp"></i>
+            </a>
+          </section>
+        </div>
+        <div class="attribution">
+          <p>
+            Developed with ♥️ by
+            <a href="https://github.com/Angela-Cordero" target="_blank"
+              >Angela Cordero</a
+            >
           </p>
-        </section>
-        <section class="social">
-          <a href="https://www.instagram.com/" target="_blank">
-            <i class="fa-brands fa-instagram" id="instagram"></i>
-          </a>
-          <a href="https://www.whatsapp.com/">
-            <i class="fa-brands fa-whatsapp" id="whatsapp"></i>
-          </a>
-        </section>
-      </div>
-      <div class="attribution">
-        <p>Developed with ♥️ by <a href="https://github.com/Angela-Cordero" target="_blank">Angela Cordero</a>
-        </p>
-      </div>
-    </footer>
-  </div>
-</body>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>

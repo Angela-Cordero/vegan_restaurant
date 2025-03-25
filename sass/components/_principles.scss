@@ -2,9 +2,8 @@
 @import "../utilities/extends";
 @import "../layout/titles";
 
-
 /*principles*/
-.principles{
+.principles {
   background-color: $color1;
   min-height: 350px;
   @extend %flex-center;
@@ -13,15 +12,19 @@
   gap: 1rem;
 }
 
-.principle1,.principle2,.principle3{
-  background-color:  $color2;
+.principle1,
+.principle2,
+.principle3 {
+  background-color: $color2;
   border-radius: 40px;
   min-width: 10rem;
   padding: 1rem;
   box-shadow: 0 0 3px $color2;
 }
 
-#bowl, #pigs, #heart{
+#bowl,
+#pigs,
+#heart {
   width: 100%;
   height: 150px;
   object-fit: cover;
@@ -31,6 +34,6 @@
   box-shadow: 0 1px 5px $color3a;
 }
 
-h4{
-  @extend %h4;
+h3 {
+  @extend %h3;
 }
