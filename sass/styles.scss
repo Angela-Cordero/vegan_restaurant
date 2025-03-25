@@ -1,4 +1,3 @@
-
 @import "./layout/header";
 @import "./layout/footer";
 @import "./layout/titles";
@@ -10,12 +9,16 @@
 @import "./components/eventForm";
 @import "./components/blog";
 @import "./components/aboutUs";
+@import "./utilities/extends";
 
-.container{
-  background-color: $color2a;
-  min-width: 300px;
-  max-width: 100vw;
-  margin: 0;
-  padding: 0;
+
+
+@media screen and (min-width: 300px) {
+  .container {
+    background-color: $color2a;
+    min-width: 300px;
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
 }
-
