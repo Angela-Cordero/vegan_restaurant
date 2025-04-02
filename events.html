@@ -53,19 +53,41 @@
     </header> 
 
       <h1>Events</h1>
-      <div class="eventTypeSection">
-        <div class="eventType" class="weddings">
-          <img src="images/wedding.jpg" alt="image">
-          <h4>Weddings</h4>
+
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="eventType" class="birthdays">
-          <img src="images/birthdays.jpg" alt="image">
-          <h4>Birthdays</h4>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/wedding.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-md-block">
+              <h5>Weddings</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/birthdays.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-md-block">
+              <h5>Birthdays</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/corporative.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-md-block">
+              <h5>Corporative</h5>
+            </div>
+          </div>
         </div>
-        <div class="eventType" class="corporative">
-          <img src="images/corporative.jpg" alt="image">
-          <h4>Corporative</h4>
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
       
       <div class="eventsInfo">

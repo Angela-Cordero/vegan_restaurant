@@ -3,39 +3,33 @@
 @import "../layout/titles";
 
 /*Events*/
-
-.eventTypeSection{
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 2rem;
-  gap: 1rem;
+#carouselExampleCaptions {
+  max-width: 800px;
+  min-width: none;
+  margin: 0 auto;
 }
 
-.eventType img{
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 0.2rem;
-}
-
-.eventType{
+.carousel-inner {
+  margin-top: 20px;
+  max-width: 800px;
+  border: 5px solid $color3;
+  border-radius: 15px;
+  padding: 15px;
   background-color: $color3;
-  color: $color2;
-  font-family:"Red Hat Text";
-  padding: 1rem;
-  width: 300px;
-  border-radius: 1rem;
-  text-align: center;
-  box-shadow: 0 1px 5px $color3;
-}
 
-.eventType h4{
-  margin-top: 0.5rem;
-}
+  .carousel-item {
+    img {
+      filter: grayscale(30%);
+      width: 100%;
+      border-radius: 10px;
+    }
 
-:hover.eventType{
-  transform: scale(1.3);
-  transition: all 0.7s ease-out;
-  box-shadow: 0 1px 5px $color2;
+    h5 {
+      font-size: 2rem;
+      font-family: "Playwrite GB S", serif;
+      background-color: $color3a;
+      border-radius: 40px;
+      text-shadow: 1px 1px 5px $color3;
+    }
+  }
 }
