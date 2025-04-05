@@ -3,28 +3,38 @@
 @import "../layout/titles";
 
 /*About us*/
-.aboutUsContainer{
+.aboutUsContainer {
   min-height: 35rem;
-  padding: 1rem;
   @extend %flex-center;
+
+  .aboutUsWoman,
+  .aboutUsMan {
+    margin: 2rem;
+    @extend %color-combination1;
+  }
+
+  p {
+    margin: 0;
+  }
 }
 
-.aboutUsContainer img{
-  max-width: 270px;
-  min-width: 100px;
-  height: auto;
+.aboutUsContainer img {
+  width: 100%;
 }
 
-.aboutUsContainer .text1,.text2{
-  max-width: 350px;
-  min-width: 100px;
-  height: auto;
-  @extend %color-combination1;
+.aboutUsWoman,
+.aboutUsMan {
+  max-width: 400px;
+  min-height: 1000px;
+  max-height: 1400px;
 }
 
-.aboutUsContainer img,.text1,.text2{
+.aboutUsWoman,
+.aboutUsMan,
+#imgWoman,
+#imgMan,
+.text1,
+.text2 {
   border-radius: 10px;
   box-shadow: 2px 2px 10px $color3;
-  margin: 1rem;
 }
-
