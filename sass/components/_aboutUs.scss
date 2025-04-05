@@ -11,6 +11,8 @@
   .aboutUsMan {
     margin: 2rem;
     @extend %color-combination1;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px $color3;
   }
 
   p {
@@ -20,6 +22,7 @@
 
 .aboutUsContainer img {
   width: 100%;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .aboutUsWoman,
@@ -27,14 +30,4 @@
   max-width: 400px;
   min-height: 1000px;
   max-height: 1400px;
-}
-
-.aboutUsWoman,
-.aboutUsMan,
-#imgWoman,
-#imgMan,
-.text1,
-.text2 {
-  border-radius: 10px;
-  box-shadow: 2px 2px 10px $color3;
 }
